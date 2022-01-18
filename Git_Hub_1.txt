@@ -1,0 +1,219 @@
+GIT Homework 1
+
+Для выполнения задания у вас должен быть установлен для Windows - GitBash.
+Создан аккаунт в GitHub
+
+Все шаги сценария выполняйте в терминале GitBush, Terminal, в папке под гитом.
+
+
+Как отправить ДЗ на проверку.
+ 1. Создайте текстоовый файл как в первом ДЗ по Terminal.
+ 2. Сценарий перенесите в этот файл.
+ 3. На против каждого действия - напишите команду в GitBash
+
+Файл со сценарием и ссылку на свой гит хаб отправляйте менторам на проверку.
+
+JSON
+ 1. Создать внешний репозиторий c названием JSON.
+ 2. Клонировать репозиторий JSON на локальный компьютер.
+	git clone https://github.com/Mashka2907/JSON.git
+ 3. Внутри локального JSON создать файл “new.json”.
+	cd JSON
+	cat > new.json
+ 4. Добавить файл под гит.
+	git add new.json
+ 5. Закоммитить файл.
+	git commit -m "add new.json file"
+ 6. Отправить файл на внешний GitHub репозиторий.
+	git push
+ 7. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+	vi new.json 
+	
+	 {
+         "Name": "Marya",
+	 "LastName": "Parfenova",
+         "Age": 26,
+         "Pet": 0,
+         "Wage": 600
+	}
+ 8. Отправить изменения на внешний репозиторий.
+	git add new.json
+	git commit -m "modifiend new.json"
+	git push
+ 9. Создать файл preferences.json
+	cat > preferences.json
+ 10. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, строна которую хотели бы посетить) в формате JSON.
+	{
+	"film": "Harry_Potter",
+	"series": "Game_of_Thrones",
+	"food": "fish",
+	"season": "summer",
+	"couantry": "Maldives"			
+	}
+ 11. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+	cat > sklls.json
+	{
+	"skills": ["Bash","Git","Postman","SQL","DevTools","Charles","Fidler","JMeter"]		
+	}
+ 12. Отправить сразу 2 файла на внешний репозиторий.
+	git add . && git commit -m "add file"
+	git push
+ 13. На веб интерфейсе создать файл bug_report.json.
+	bug_report.json- edit this file
+ 14. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 15. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+	{
+	"Summary": "User Info: The 'Undo' button is disabled after clicking the 'Save' button",
+	"Pre-conditions": "The UserB was created",
+	"STR": ["1.Log in under UserB","2.Select the 'User Info' tab","3.Edit the information from'User Name' field","4.Click the 'Save' button","5.Navigate to the 'Undo' button"],
+	"ACT": "The 'Undo' button is disabled after clicking the 'Save' button",
+	"EXP": "The 'Undo' button is activated after clicking the 'Save' button",
+	"Priority": "Medium"
+	}
+ 16. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 17. Синхронизировать внешний и локальный репозиторий JSON
+	git pull
+
+
+XML
+ 1. Создать внешний репозиторий c названием XML.
+ 2. Клонировать репозиторий XML на локальный компьютер.
+	git clone https://github.com/Mashka2907/XML.git
+ 3. Внутри локального XML создать файл “new.xml”.
+	cat > new.xml
+ 4. Добавить файл под гит.
+	git add new.xml
+ 5. Закоммитить файл.
+	git commit -m "add new.xml file"
+ 6. Отправить файл на внешний GitHub репозиторий.
+	git push
+ 7. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+	vi new.xml
+	
+	<?xml version="1.0" encoding="UTF-8"?>
+    <note>
+        <NAME>Marya</NAME>
+		<LASTNAME>Parfenova</LASTNAME>
+		<AGE>26</AGE>
+		<PET>0</PET>
+		<WAGE>600</WAGE>
+    </note>
+	
+ 8. Отправить изменения на внешний репозиторий.
+	git add new.xml
+	git commit -m "modified new.xml"
+	git push
+ 9. Создать файл preferences.xml
+	cat > preferences.xml
+ 10. В файл preferences.xml добавить информацию о своих предпочтениях 
+(Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+	
+	<?xml version="1.0" encoding="UTF-8"?>
+    <note>
+        <film>Harry_Potter</film>
+	<series>Game_of_Thrones</series>
+	<food>fish</food>
+	<season>summer</season>
+	<couantry>Maldives</couantry>
+    </note>
+	
+ 11. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+	cat > skills.xml
+
+	<?xml version="1.0" encoding="UTF-8"?>
+    <note>
+        <skills>Bash</skills>
+	<skills>Git</skills>
+	<skills>Postman</skills>
+	<skills>SQL</skills>
+	<skills>Sharles</skills>
+	<skills>DevTools</skills>
+	<skills>GMeter</skills>
+	<skills>Fidler</skills>
+    </note>
+ 12. Сделать коммит в одну строку.
+	git add . && git commit -m "add file" 
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+	git push
+ 14. На веб интерфейсе создать файл bug_report.xml.
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 16. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+	<?xml version="1.0" encoding="UTF-8"?>
+    <bug_report>
+        <Summary>User Info: The 'Undo' button is disabled after clicking the 'Save' button</Summary>
+	      <Pre-conditions>The UserB was created</Pre-conditions>
+	      <STR>1.Log in under UserB</STR>
+        	<STR>2.Select the 'User Info' tab</STR>
+        	<STR>3.Edit the information from'User Name' field</STR>
+        	<STR>4.Click the 'Save' button</STR>
+        	<STR>5.Navigate to the 'Undo' button</STR>
+	      <ACT>The 'Undo' button is disabled after clicking the 'Save' button</ACT>
+	      <EXP>The 'Undo' button is activated after clicking the 'Save' button</EXP>
+	      <Priority>Medium</Priority>
+    </bug_report>  
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. Синхронизировать внешний и локальный репозиторий XML
+	git pull
+ 
+ 
+ TXT
+ 1. Создать внешний репозиторий c названием TXT.
+ 2. Клонировать репозиторий TXT на локальный компьютер.
+	git clone https://github.com/Mashka2907/TXT.git
+ 3. Внутри локального TXT создать файл “new.txt”.
+	cd TXT
+	cat > new.txt
+ 4. Добавить файл под гит.
+	git add new.txt
+ 5. Закоммитить файл.
+	git commit -m "add new.txt file"
+ 6. Отправить файл на внешний GitHub репозиторий.
+	git push
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+	vi new.txt
+	
+	ФИО: Парфёнова Мария Эдуардовна
+	Возраст: 26 лет
+	Домашние животные: 0
+	Желаемая зарплата: 600$
+
+ 8. Отправить изменения на внешний репозиторий.
+	git add new.txt
+	git commit -m "modified new.txt"
+	git push
+ 9. Создать файл preferences.txt
+	cat > preferences.txt
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+	Фильм: Гарри Потер
+	Сериал: Игра Престолов
+	Еда: Рыба
+	Время года: Лето
+	Страна: Мальдивы
+
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+	cat > skills.txt
+	skills: Bash, Git, Postman, SQL, DevTools, Charles, Fidler, JMeter.
+ 12. Сделать коммит в одну строку.
+	git add . && git commit -m "add file"
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+	git push
+ 14. На веб интерфейсе создать файл bug_report.txt.
+	add file- create new file- bug_report.txt
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+	
+	Summary: "User Info: The 'Undo' button is disabled after clicking the 'Save' button"
+	Pre-conditions: The UserB was created.
+	STR: 
+      1.Log in under UserB.
+      2.Select the 'User Info' tab.
+      3.Edit the information from'User Name' field.
+      4.Click the 'Save' button.
+      5.Navigate to the 'Undo' button.
+	ACT: The 'Undo' button is disabled after clicking the 'Save' button.
+	EXP": The 'Undo' button is activated after clicking the 'Save' button.
+	Priority: Medium
+	
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. Синхронизировать внешний и локальный репозиторий TXT
+	git pull
